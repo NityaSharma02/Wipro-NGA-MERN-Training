@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:blue; text-align:center;">Flexbox Demo</h1>
+    <p>This is a demonstration of Flexbox layout in CSS.</p>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            background-color: #f4f4f4;
+            border: 2px solid #ccc;
+            padding: 10px;
+            border-radius: 25%;
+        }
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 50%;
+        }
+    </style>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    
+</body>
+</html>

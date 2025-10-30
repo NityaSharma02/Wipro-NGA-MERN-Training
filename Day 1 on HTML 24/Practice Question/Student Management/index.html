@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spring Flower School - Student Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #eef2f5;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .header {
+      background-color: #1e3d59;
+      color: white;
+      padding: 15px 30px;
+    }
+    .logo-school img {
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+    .menu-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .menu-links a:hover {
+      background-color: #ecdda0;
+      color: #1e3d59;
+    }
+    .welcome {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .content-section {
+      display: none;
+    }
+    .content-section:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header d-flex flex-column flex-md-row justify-content-between align-items-center">
+  <div class="logo-school d-flex align-items-center">
+    <img src="logo.png" alt="School Logo" />
+    <h1 class="h4 mb-0">Spring Flower School</h1>
+  </div>
+  <div class="menu-links d-flex flex-wrap gap-2 mt-3 mt-md-0">
+    <a href="#">Home</a>
+    <a href="#profile">Student Profile</a>
+    <a href="#timetable">TimeTable</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- Welcome Section -->
+<section class="welcome container">
+  <h2 class="text-primary">Welcome to Spring Flower School</h2>
+  <p>Your gateway to managing student information efficiently online, including your timetable!</p>
+  <a href="#profile" class="btn btn-outline-primary me-2">View Student Profile</a>
+  <a href="#timetable" class="btn btn-outline-primary">View TimeTable</a>
+</section>
+
+<!-- Student Profile Section -->
+<section id="profile" class="content-section container bg-white p-4 rounded shadow">
+  <h2 class="border-bottom pb-2 mb-3 text-primary">Student Profile</h2>
+  <p><strong>Name:</strong> Nitya Sharma</p>
+  <p><strong>Roll Number:</strong> 102</p>
+  <p><strong>Class:</strong> 10th Grade</p>
+  <p><strong>Email:</strong> nityasharma@gmail.com</p>
+</section>
+
+<!-- TimeTable Section -->
+<section id="timetable" class="content-section container bg-white p-4 rounded shadow mt-4">
+  <h2 class="border-bottom pb-2 mb-3 text-primary">Time Table</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Day</th>
+          <th>9:00 - 10:00</th>
+          <th>10:15 - 11:15</th>
+          <th>11:30 - 12:30</th>
+          <th>1:30 - 2:30</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Science</td>
+          <td>Computer</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>History</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Art</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Science</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>PE</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Computer</td>
+          <td>History</td>
+          <td>Math</td>
+          <td>Science</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Computer</td>
+          <td>Art</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

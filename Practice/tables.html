@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table,th, td {
+            border: 1px solid rgb(10, 2, 2);
+        }
+
+        th, td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <h2>Weather Report</h2>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Rainfall</th>
+                <th>Min</th>
+                <th>Max</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Banglore</td>
+                <td>5 mm</td>
+                <td>22C</td>
+                <td>30C</td>
+            </tr>
+        
+            <tr>
+                <td>Pune</td>
+                <td>2 mm</td>
+                <td>32C</td>
+                <td>36C</td>
+            </tr>
+
+            <tr>
+                <td>Bhopal</td>
+                <td>7 mm</td>
+                <td>20C</td>
+                <td>29C</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- colspan → Makes a table cell span across multiple columns (horizontally). -->
+    <h3>Colspan</h3>
+    <table border="1">
+        <tr>
+            <th> Name </th>
+            <th> Age </th>
+            <th> City </th>
+        </tr>
+        <tr>
+            <td colspan="2">Nitya Sharma</td>
+            <td>Delhi</td>
+        </tr>
+    </table>
+    
+    <!-- rowspan → Makes a table cell span across multiple rows (vertically). -->
+    <h3>Rowspan</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Nitya Sharma</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>twenty-two</td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+
+</body>
+</html>
