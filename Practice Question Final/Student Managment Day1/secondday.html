@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spring Flower School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #eef2f5;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .login-box {
+      max-width: 400px;
+      margin: 80px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-box img {
+      height: 60px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .btn-primary {
+      background-color: #1e3d59;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #ffdd59;
+      color: #1e3d59;
+    }
+
+    .header {
+      background-color: #1e3d59;
+      color: white;
+      padding: 15px 30px;
+    }
+
+    .logo-school img {
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+
+    .menu-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .menu-links a:hover {
+      background-color: #ffdd59;
+      color: #1e3d59;
+    }
+
+    .welcome, .content-section {
+      display: none;
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .content-section h2 {
+      margin-bottom: 20px;
+      color: #1e3d59;
+      border-bottom: 2px solid #ff6f61;
+      padding-bottom: 10px;
+    }
+
+    table th {
+      background-color: #1e3d59;
+      color: #ffdd59;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Login Section -->
+<div id="loginSection" class="login-box">
+  <img src="logo.png" alt="School Logo" />
+  <h2 class="text-primary">Student Login</h2>
+  <form id="loginForm">
+    <div class="mb-3 text-start">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" id="username" class="form-control" required />
+    </div>
+    <div class="mb-3 text-start">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" id="password" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Login</button>
+  </form>
+</div>
+
+<!-- Dashboard Section -->
+<div id="dashboard" style="display:none;">
+  <div class="header d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="logo-school d-flex align-items-center">
+      <img src="logo.png" alt="School Logo" />
+      <h1 class="h4 mb-0">Spring Flower School</h1>
+    </div>
+    <div class="menu-links d-flex flex-wrap gap-2 mt-3 mt-md-0">
+      <a href="#" onclick="showSection('welcome')">Home</a>
+      <a href="#" onclick="showSection('profile')">Student Profile</a>
+      <a href="#" onclick="showSection('timetable')">TimeTable</a>
+      <a href="#" onclick="showSection('monthly')">Monthly Chart</a>
+    </div>
+  </div>
+
+  <section id="welcome" class="welcome">
+    <h2 class="text-primary">Welcome to Spring Flower School</h2>
+    <p>Your gateway to managing student information efficiently online!</p>
+  </section>
+
+  <section id="profile" class="content-section">
+    <h2>Student Profile</h2>
+    <p><strong>Name:</strong> Nitya Sharma</p>
+    <p><strong>Roll Number:</strong> 102</p>
+    <p><strong>Class:</strong> 10th Grade</p>
+    <p><strong>Email:</strong> nityasharma@gmail.com</p>
+  </section>
+
+  <section id="timetable" class="content-section">
+    <h2>Time Table</h2>
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>9:00 - 10:00</th>
+          <th>10:15 - 11:15</th>
+          <th>11:30 - 12:30</th>
+          <th>1:30 - 2:30</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Monday</td><td>Math</td><td>English</td><td>Science</td><td>Computer</td></tr>
+        <tr><td>Tuesday</td><td>History</td><td>Math</td><td>English</td><td>Art</td></tr>
+        <tr><td>Wednesday</td><td>Science</td><td>Math</td><td>English</td><td>PE</td></tr>
+        <tr><td>Thursday</td><td>Computer</td><td>History</td><td>Math</td><td>Science</td></tr>
+        <tr><td>Friday</td><td>English</td><td>Math</td><td>Science</td><td>Art</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="monthly" class="content-section">
+    <h2>Monthly Activities</h2>
+    <select id="subjectSelect" class="form-select mb-3">
+      <option value="">Select Subject</option>
+      <option value="Maths">Maths</option>
+      <option value="Science">Science</option>
+      <option value="English">English</option>
+      <option value="History">History</option>
+    </select>
+    <ul id="activityList" class="list-group"></ul>
+  </section>
+</div>
+
+<script>
+    const validUsers = [{ username: "Nitya Sharma", password: "1234" }];
+
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const isValid = validUsers.some(user => user.username === username && user.password === password);
+        if (isValid) {
+        document.getElementById("loginSection").style.display = "none";
+        document.getElementById("dashboard").style.display = "block";
+        showSection("welcome");
+        } else {
+        alert("Invalid username or password.");
+        }
+    });
+
+    function showSection(id) {
+        document.querySelectorAll(".content-section, .welcome").forEach(sec => sec.style.display = "none");
+        document.getElementById(id).style.display = "block";
+    }
+
+    const activities = [
+        {
+            id: 1,
+            activity: "Solve 20 advanced algebra problems involving quadratic equations and graph plotting",
+            subject: "Maths"
+        },
+        {
+            id: 2,
+            activity: "Write a critical analysis essay on the theme of identity in Shakespeare's 'Merchant of Venice'",
+            subject: "English"
+        },
+        {
+            id: 3,
+            activity: "Conduct a practical experiment on chemical reactions and document observations with balanced equations",
+            subject: "Science"
+        },
+        {
+            id: 4,
+            activity: "Create a detailed research presentation on the causes and consequences of World War II",
+            subject: "History"
+        },
+        {
+            id: 5,
+            activity: "Build a basic website using HTML and CSS to showcase a personal portfolio",
+            subject: "Computer"
+        },
+        {
+            id: 6,
+            activity: "Design a poster using mixed media that reflects the theme 'Technology and Humanity'",
+            subject: "Art"
+        },
+        {
+            id: 7,
+            activity: "Prepare and perform a 5-minute aerobic routine focusing on stamina and coordination",
+            subject: "PE"
+        }
+        ];
+
+
+  document.getElementById("subjectSelect").addEventListener("change", function() {
+    const selected = this.value;
+    const filtered = activities.filter(act => act.subject === selected);
+    const list = document.getElementById("activityList");
+    list.innerHTML = "";
+    filtered.forEach(act => {
+      const li = document.createElement("li");
+      li.className = "list-group-item";
+      li.textContent = act.activity;
+      list.appendChild(li);
+    });
+  });
+</script>
+
+</body>
+</html>

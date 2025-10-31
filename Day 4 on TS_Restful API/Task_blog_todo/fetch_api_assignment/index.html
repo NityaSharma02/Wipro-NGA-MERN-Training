@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThoughtSpace | Blog & Todo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>ThoughtSpace</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#postsSection">Blog</a>
+        <a href="#todosSection">Todos</a>
+        <a href="#">Login</a>
+        <button id="getStarted">Get Started</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>💭 Blog Thoughts</h1>
+      <p>Explore creative blogs and manage your daily tasks seamlessly.</p>
+    </section>
+
+    <div id="errorMessage" class="error hidden"></div>
+
+    <div class="content">
+      <section id="postsSection" class="single-section">
+        <h2>📝 Blog Posts</h2>
+        <button id="fetchPostsBtn">Fetch Blog Posts</button>
+        <div id="postsContainer" class="card-container"></div>
+      </section>
+
+      <section id="todosSection" class="single-section">
+        <h2>✅ Todo List</h2>
+        <button id="fetchTodosBtn">Fetch Todo List</button>
+        <div id="todosContainer" class="card-container"></div>
+      </section>
+    </div>
+
+    <div id="loading" class="hidden loader">Loading...</div>
+  </main>
+
+  <footer>
+    <p>Created by Nitya Sharma | Fetch API Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
