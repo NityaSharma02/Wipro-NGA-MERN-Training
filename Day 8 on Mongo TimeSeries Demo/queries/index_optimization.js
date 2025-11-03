@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb://localhost:27017"; // my Atlas URI
+const uri = ""; // my Atlas URI
 const client = new MongoClient(uri);
 
 const dbName = "GreenPulse";
