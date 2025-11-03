@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb://localhost:27017"; // my connection string
+const uri = ""; // my connection string
 const client = new MongoClient(uri);
 
 const dbName = "GreenPulse";
