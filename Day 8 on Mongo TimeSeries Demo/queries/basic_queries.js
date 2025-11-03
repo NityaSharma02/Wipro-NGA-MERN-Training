@@ -1,7 +1,7 @@
 const { MongoClient } = require("mongodb");
 
 // connection
-const uri = "mongodb://localhost:27017"; // replace this or  Atlas URI
+const uri = ""; // replace this or  Atlas URI
 
 // Database and collection
 const client = new MongoClient(uri);
