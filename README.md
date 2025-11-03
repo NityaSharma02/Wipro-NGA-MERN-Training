@@ -21,7 +21,7 @@ Each smart meter records readings every minute, including:
 ## ⚙️ Steps to Create Time-Series Collection (Using MongoDB Compass GUI)
 
 1. Open **MongoDB Compass** and connect to your cluster.  
-2. Select your database or create a new one (e.g., `energyDB`).  
+2. Select your database or create a new one (e.g., `GreenPulse`).  
 3. Click **“Create Collection” → “Time-Series Collection”**.  
 4. Fill the details:
    - **Collection Name:** `energy_readings`  
