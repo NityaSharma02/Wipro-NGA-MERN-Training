@@ -1,0 +1,72 @@
+[{
+  "timestamp": {
+    "$date": "2025-10-29T10:00:00.000Z"
+  },
+  "meterId": "MTR001",
+  "_id": {
+    "$oid": "69084547f9fcfe883147189e"
+  },
+  "location": "Delhi-Office",
+  "energy_kWh": 3.5,
+  "temperature_C": 27
+},
+{
+  "timestamp": {
+    "$date": "2025-10-29T11:00:00.000Z"
+  },
+  "meterId": "MTR001",
+  "_id": {
+    "$oid": "69084547f9fcfe883147189f"
+  },
+  "location": "Delhi-Office",
+  "energy_kWh": 3.8,
+  "temperature_C": 28
+},
+{
+  "timestamp": {
+    "$date": "2025-10-29T12:00:00.000Z"
+  },
+  "meterId": "MTR001",
+  "_id": {
+    "$oid": "69084547f9fcfe88314718a0"
+  },
+  "location": "Delhi-Office",
+  "energy_kWh": 4.2,
+  "temperature_C": 30
+},
+{
+  "timestamp": {
+    "$date": "2025-10-29T10:00:00.000Z"
+  },
+  "meterId": "MTR002",
+  "location": "Mumbai-Plant",
+  "energy_kWh": 5.5,
+  "_id": {
+    "$oid": "69084547f9fcfe88314718a1"
+  },
+  "temperature_C": 32
+},
+{
+  "timestamp": {
+    "$date": "2025-10-29T11:00:00.000Z"
+  },
+  "meterId": "MTR002",
+  "location": "Mumbai-Plant",
+  "energy_kWh": 6.2,
+  "_id": {
+    "$oid": "69084547f9fcfe88314718a2"
+  },
+  "temperature_C": 33
+},
+{
+  "timestamp": {
+    "$date": "2025-10-29T12:00:00.000Z"
+  },
+  "meterId": "MTR002",
+  "location": "Mumbai-Plant",
+  "energy_kWh": 5.9,
+  "_id": {
+    "$oid": "69084547f9fcfe88314718a3"
+  },
+  "temperature_C": 31
+}]

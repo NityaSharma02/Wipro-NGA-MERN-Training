@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduProDB Courses</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="p-4">
+
+  <h2 class="mb-3">EduProDB Courses</h2>
+  <button onclick="getCourses()" class="btn btn-primary mb-3">Load Courses</button>
+
+  <!-- Display courses dynamically -->
+  <div id="course-list"></div>
+
+  <script>
+    // Step 3: Display data dynamically from server
+    async function getCourses() {
+      const response = await fetch('http://localhost:3000/courses');
+      const data = await response.json();
+
+      const container = document.getElementById('course-list');
+      container.innerHTML = '';
+      data.forEach(course => {
+        container.innerHTML += `
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">${course.title}</h5>
+              <p class="card-text">${course.description}</p>
+            </div>
+          </div>`;
+      });
+    }
+  </script>
+</body>
+</html>
