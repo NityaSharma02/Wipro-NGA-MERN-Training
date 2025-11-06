@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fa;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  background: linear-gradient(90deg, #00897b, #26a69a);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.main-header h1 {
+  font-weight: 600;
+}
+
+/* Nav Links */
+.nav-bar a {
+  text-decoration: none;
+  color: #00897b;
+  font-weight: 500;
+}
+.nav-bar a:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  height: 55vh;
+  background: url('https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNob2VzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,77,64,0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons */
+.main-btn {
+  background: linear-gradient(90deg, #009688, #26a69a);
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.main-btn:hover {
+  background: #00796b;
+  transform: translateY(-2px);
+}
+
+/* Product Cards */
+.product-card img {
+  height: 230px;
+  object-fit: cover;
+}
+.product-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Newsletter */
+.newsletter {
+  background: #e0f2f1;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+}

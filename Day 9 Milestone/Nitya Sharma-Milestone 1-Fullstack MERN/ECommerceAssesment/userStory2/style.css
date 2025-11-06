@@ -1,0 +1,117 @@
+
+
+/* Global Body Styling */
+body {
+    background-color: #f0f2f5; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styling
+header {
+    background-color: #00ff88; 
+    background-image: linear-gradient(to right,#00897b, #26a69a); 
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* --- Filter & Sort Section (Sidebar) Enhancements --- */
+.sidebar {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+}
+.sidebar h4 {
+    color: #007bff; 
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Custom Styles for Form Controls*/
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+/* Focus and Hover Effects for Form Controls */
+.form-control:hover, .form-select:hover {
+    border-color: #a0c7ff; 
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); 
+    outline: none;
+}
+
+/* Label Style */
+.form-label.fw-bold {
+    color: #495057;
+    margin-bottom: 6px;
+}
+
+
+
+/* Product Card Style - Visually Engaging (Retained) */
+.product-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 12px;
+    border: 1px solid #e9ecef; 
+    overflow: hidden;
+    height: 100%;
+    background-color: white;
+}
+
+.product-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+}
+
+/* Image Containment (Retained) */
+.card-img-top {
+    height: 220px; 
+    object-fit: contain;
+    padding: 20px;
+    background-color: #fff; 
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.card-title {
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 8px;
+}
+
+/* Price Tag (Retained) */
+.price-tag {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #28a745; 
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+/* Button Refinement (Retained) */
+.btn-outline-primary {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #007bff;
+}
