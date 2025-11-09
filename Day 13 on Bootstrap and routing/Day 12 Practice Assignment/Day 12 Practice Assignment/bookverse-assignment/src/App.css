@@ -1,0 +1,57 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.booklist.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.booklist.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  margin: 0;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+.card-body {
+  text-align: left; /* ensures book title/author left-aligned */
+}
+
+.detail-card img {
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* full image visible in detail view */
+}
+
+/* small fade utility used by framer-motion as fallback */
+.route-fade-enter {
+  opacity: 0;
+}
+.route-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.route-fade-exit {
+  opacity: 1;
+}
+.route-fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

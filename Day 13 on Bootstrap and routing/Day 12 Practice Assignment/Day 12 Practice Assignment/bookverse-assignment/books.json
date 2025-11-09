@@ -1,0 +1,130 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 499,
+      "image": "https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Ikigai",
+      "author": "Héctor García",
+      "price": 350,
+      "image": "https://m.media-amazon.com/images/I/81l3rZK4lnL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 399,
+      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "price": 450,
+      "image": "https://m.media-amazon.com/images/I/817nqpGoWbL._SL1500_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Think Like a Monk",
+      "author": "Jay Shetty",
+      "price": 380,
+      "image": "https://m.media-amazon.com/images/I/81s6DUyQCZL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "price": 299,
+      "image": "https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Can't Hurt Me",
+      "author": "David Goggins",
+      "price": 480,
+      "image": "https://m.media-amazon.com/images/I/81qEgMaVljL._SL1500_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The Power of Now",
+      "author": "Eckhart Tolle",
+      "price": 420,
+      "image": "https://m.media-amazon.com/images/I/51wk62SpJaL.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "price": 550,
+      "image": "https://m.media-amazon.com/images/I/713jIoMO3UL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The 5 AM Club",
+      "author": "Robin Sharma",
+      "price": 410,
+      "image": "https://m.media-amazon.com/images/I/71zytzrg6lL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Do Epic Shit",
+      "author": "Ankur Warikoo",
+      "price": 340,
+      "image": "https://m.media-amazon.com/images/I/71kdr7LYJUL._SL1500_.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Rework",
+      "author": "Jason Fried",
+      "price": 399,
+      "image": "https://m.media-amazon.com/images/I/71f+6gez7bL._SL1500_.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Hooked",
+      "author": "Nir Eyal",
+      "price": 370,
+      "image": "https://m.media-amazon.com/images/I/81Ox0HCg8jL._SL1500_.jpg"
+    },
+    {
+      "id": 14,
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "price": 450,
+      "image": "https://m.media-amazon.com/images/I/71t4GuxLCuL._SL1500_.jpg"
+    },
+    {
+      "id": 15,
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "price": 499,
+      "image": "https://m.media-amazon.com/images/I/81Lb75rUhLL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "price": 520,
+      "image": "https://m.media-amazon.com/images/I/81EOCTUSCLL._SL1500_.jpg"
+    },
+    {
+      "id": 17,
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "price": 410,
+      "image": "https://m.media-amazon.com/images/I/91jxIGZAkdL._SL1500_.jpg"
+    },
+    {
+      "id": 18,
+      "title": "The Mountain Is You",
+      "author": "Brianna Wiest",
+      "price": 380,
+      "image": "https://m.media-amazon.com/images/I/61UC-FYP3gL._SL1500_.jpg"
+    }
+  ]
+}
