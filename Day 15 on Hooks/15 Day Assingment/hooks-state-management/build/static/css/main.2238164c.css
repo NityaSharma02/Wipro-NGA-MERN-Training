@@ -1,0 +1,2 @@
+:root{--bg:#fff;--text:#222;--muted:#888;--card-bg:#f9f9f9;--card-shadow:0 1px 4px #0000000f}[data-theme=dark]{--bg:#0f1220;--text:#e8eef8;--muted:#9aa3b2;--card-bg:#121422;--card-shadow:0 2px 8px #000000b3}#root,body,html{background:#fff;background:var(--bg);color:#222;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial;height:100%;margin:0}
+/*# sourceMappingURL=main.2238164c.css.map*/
