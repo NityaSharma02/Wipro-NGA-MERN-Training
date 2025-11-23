@@ -1,0 +1,27 @@
+{
+  "name": "skilltrack-dashboard",
+  "version": "1.0.0",
+  "description": "An internal Student Progress Dashboard for SkillTrack Academy.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "ejs": "^3.1.6",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "keywords": [
+    "express",
+    "dashboard",
+    "student",
+    "progress"
+  ],
+  "author": "SkillTrack Academy",
+  "license": "ISC"
+}

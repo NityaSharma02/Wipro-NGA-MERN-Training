@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "progress": {
+            "completedCourses": 5,
+            "totalCourses": 10,
+            "attendance": 90
+        }
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "progress": {
+            "completedCourses": 3,
+            "totalCourses": 10,
+            "attendance": 85
+        }
+    },
+    {
+        "id": 3,
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "progress": {
+            "completedCourses": 7,
+            "totalCourses": 10,
+            "attendance": 95
+        }
+    },
+    {
+        "id": 4,
+        "name": "Bob Brown",
+        "email": "bob.brown@example.com",
+        "progress": {
+            "completedCourses": 2,
+            "totalCourses": 10,
+            "attendance": 80
+        }
+    }
+]
